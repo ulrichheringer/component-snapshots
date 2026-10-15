@@ -1,9 +1,21 @@
 # component-snapshots
 
-Galeria React pequena para inspecionar componentes e seus estados em uma tela local. O script de captura usa Playwright para gerar uma imagem de cada cartão em três larguras.
+A small React gallery for previewing components and their states. A Playwright script captures the gallery cards at three viewport widths.
 
-## Executar
+## Run locally
 
-Requer Node.js 20.19 ou superior. Instale dependências com **npm install**; rode **npm run dev** para abrir a galeria. Para capturar as imagens, instale o Chromium uma vez com **npx playwright install chromium** e execute **npm run screenshots**. Os PNGs vão para screenshots/ (pasta ignorada pelo Git).
+Requires Node.js 20.19 or later.
 
-**npm test** valida o catálogo e seus filtros. **npm run build** produz o site estático em dist/.
+```sh
+npm install
+npm run dev
+```
+
+To capture screenshots, install Chromium once and run the capture script:
+
+```sh
+npx playwright install chromium
+npm run screenshots
+```
+
+PNG files are saved in `screenshots/`, which is ignored by Git. Run `npm test` for the catalog and filter tests, or `npm run build` to create the static app in `dist/`.
