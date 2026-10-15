@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+screenshots/
+playwright-report/
+.DS_Store
+
